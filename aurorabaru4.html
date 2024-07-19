@@ -1,0 +1,165 @@
+<html>
+    <head>
+    <title>NAVIGATION BAR</title>
+    <style>
+        body{
+            background-image: url(rose23.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 100%;
+            background-color: #f0f0f0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #050505;
+            padding: 10px 0;
+            font-family: 'Times New Roman';
+        }
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: #575757;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 25px;
+            border: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+            background-color: #d88cb5;
+        }
+    </style>
+    </head>
+<body>
+    <div class="navbar">
+        <a href="aurorabaru1.html">HOME</a>
+        <a href="aurorabaru2.html">EVENT DIRECTIONS</a>
+        <a href="aurorabaru3.html">PRICING</a>
+        <a href="aurorabaru4.html">ADDITIONAL INFORMATION</a>
+    </div>
+    <title>RELATED INFORMATION</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9C2106;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: Stencil;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 50px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 15px;
+            color: BLACK;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: Times New Roman;
+            font-size: 23px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-family: Times New Roman;
+        }
+        ul li {
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 80px;
+            transition: transform 0.2s;
+        }
+        ul li:hover {
+            transform: 0.2s;
+            box-shadow: 80px;
+        }
+        ul li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: BLACK;
+            font-size: 15px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+        ul li a:hover {
+            color: #0056b3;
+        }
+        .next {
+            background-color: #d88cb5;
+        }
+    </style>
+<body>
+    <header>
+        <h1>ADDITIONAL INFORMATION</h1>
+    </header>
+    <div class="center-text">
+       <center><button class="button" id="playButton" onclick="playAudio()">Play Music</button></center> 
+        <background-color:"#0f0f0f"></background>
+    </div>
+    <audio id="bg-music">
+        <source src="music2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('bg-music');
+            audio.play().then(() => {
+                document.getElementById('playButton').style.display = 'none';
+            }).catch(error => {
+                console.error('Audio playback failed:', error);
+            });
+        }
+    </script>
+    <div class="container">
+        <section>
+            <h2>RELATED INFORMATION</h2>
+            <ul>
+                <li><a href="https://www.beautyrelay.com/blog/the-magic-of-matte-how-liquid-lipsticks-can-instantly-upgrade-your-look#:~:text=This%20makes%20the%20lips%20look,than%20other%20types%20of%20lipsticks">The Magic of Matte</a></li>
+                <li><a href="https://www.masterclass.com/articles/how-to-apply-matte-lipstick">How to Apply Matte Lipstick in 5 Steps</a></li>
+                <li><a href="https://www.instagram.com/erniezakri/?igsh=MXN5Zm0zOHNkdXJ3Mw%3D%3D">Ernie Zakri Instagram</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>RELATED SITES</h2>
+            <ul>
+                <li><a href="https://youtu.be/i-JbglCMZnM?si=msc0RRYOXqN4Mwjw">Lipmatte Tips</a></li>
+                <li><a href="https://youtu.be/0fL0z2fJiyk?si=3Kp1pzXbpx4FGMxS">Lipstick Tutorial</a></li>
+            </ul>
+        </section>
+        <div class="footer">
+            <div class="button-container">
+                <a href="aurorabaru3.html" class="button prev">PREVIOUS</a>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<HTML>
+    <HEAD>
+    <TITLE>AURORA GLOW</TITLE>
+    <style>
+            body {
+                background-image: url(rose23.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background: #9C2106;
+                color: white;
+                padding: 1em 0;
+                text-align: center;
+                font-family: Stencil;
+                font-size: 20px;
+                height: 100px;
+            }
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .event-info, .graphics, .event-logo, .email-link {
+                background: #fff;
+                margin: 20px 0;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .event-info h2, .graphics h2, .event-logo h2, .email-link h2 {
+                margin-top: 0;
+            }
+            .email-link a {
+                color: red;
+                text-decoration: none;
+                background: #f4f4f4;
+                padding: 10px 20px;
+                border: 1px solid red;
+                display: inline-block;
+            }
+            .center-text {
+                text-align: center;
+            }
+            .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 25px;
+            border: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+            background-color: #d88cb5;
+            }
+            .button img {
+            margin-right: 8px;
+            }
+            .next {
+            background-color: #d88cb5;
+            }
+            .prev{
+            background-color: #d88cb5;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="center-text"><font-family="Stencil"><font-size="7">AURORA GLOW </font-family></font-size></h1>
+        </header>
+        <div class="center-text">
+            <button class="button" id="playButton" onclick="playAudio()">Play Music</button>
+            <background-color:"#0f0f0f"></background>
+        </div>
+        <audio id="bg-music">
+            <source src="music2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            function playAudio() {
+                var audio = document.getElementById('bg-music');
+                audio.play().then(() => {
+                    document.getElementById('playButton').style.display = 'none';
+                }).catch(error => {
+                    console.error('Audio playback failed:', error);
+                });
+            }
+        </script>
+        <div class="container">
+            <div class="event-info">
+                <h2 class="center-text">EVENT INFORMATION</h2>
+                <p><strong><font-size="4">Name:</strong> AURORA LIPMATTE ROSE EDITION<font-size/></p>
+                <p><strong><font-size="4">Date and Time:</strong> 17 August 2024, 8:30 PM - 11.00 P.M</font-size></p>
+                <p><strong><font-size="4">Event Description:</strong> Unveiling the magic of Aurora Glow! Join our dazzling launch party for Aurora Lipmatte, a weightless, long-lasting lip color collection inspired by the aurora's radiance. Immerse yourself in a captivating venue, witness live concert, unlock your perfect shade, and enjoy exclusive discounts. Please respond to be part of the luminous launch! #AuroraGlow #LipmatteLaunch #BeautyEvent</font-size></p>
+                <p><strong><font-size="4">Venue:</strong> The Majestic Hotel Kuala Lumpur</font-size></p>
+            </div>
+            <div class="graphics">
+                <h2 class="center-text">GRAPHIC</h2>
+                <center><img src="rose11.png" alt="Event Graphic" style="width:80%;height:auto;"></center>
+            </div>
+            <div class="event-logo">
+                <h2 class="center-text">EVENT LOGO</h2>
+                <center><img src="rose12.png" alt="Event Logo" style="width:80%;height:auto;"></center>
+            </div>
+            <div class="email-link center-text">
+                <h2>CONTACT US</h2>
+                <a href="mailto:info@example.com"><font-size="4">auroraglow@gmail.com</font-size></a>
+            </div>
+            <div class="footer">
+                <center><a href="aurorabaru2.html" class="button next";>NEXT</center></div></a>
+            </div>
+        </div>
+    </body>
+    </html>

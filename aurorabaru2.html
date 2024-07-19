@@ -1,0 +1,143 @@
+<html>
+    <head>
+    <title>EVENT DIRECTIONS</title>
+    <style>
+        body {
+            background-image: url(rose23.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header {
+            background: #f0cccc;
+            color: BLACK;
+            padding: 30px;
+            height: 1500px;
+            text-align: center;
+            box-shadow: 80px;
+            width: 100%;
+            font-family: Stencil;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .row{
+            display: grid;
+        }
+        .main-content {
+            flex: 5;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 80px;
+            border-radius: 10px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #f26f4e;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .card img {
+            display: block;
+            margin: auto;
+            height: fit-content;
+            max-width: 70%;
+        }
+        .card p {
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 25px;
+            border: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+            background-color: #d88cb5;
+        }
+        .button img {
+            margin-right: 10px;
+        }
+        .next {
+            background-color: #d88cb5;
+        }
+        .prev {
+            background-color: #d88cb5;
+        }
+    </style>
+    </head>
+<body>
+    <header>
+        <h1 class="center-text"><font-size="5.5">PRODUCT LAUNCH: AURORA ROSE EDITION</font-size></h1>
+        <div class="row">
+        <center><img src="rose24.png" alt="Event Graphic" style="450px;height:450px;"></center>
+        <center><img src="rose25.png" alt="Event Graphic" style="450px;height:450px;"></center>
+        <center><img src="rose32.png" alt="Event Graphic" style="450px;height:450px;"></center>
+        </div>
+    </header>
+    <div class="center-text">
+        <button class="button" id="playButton" onclick="playAudio()">Play Music</button>
+        <background-color:"#0f0f0f"></background>
+    </div>
+    <audio id="bg-music">
+        <source src="music2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('bg-music');
+            audio.play().then(() => {
+                document.getElementById('playButton').style.display = 'none';
+            }).catch(error => {
+                console.error('Audio playback failed:', error);
+            });
+        }
+    </script>
+    <div class="container">
+        <div class="main-content">
+            <div class="card">
+                <h2 class="center-text"><font-color="#D64A4A">MAP IMAGE</font-color></h2>
+                <img src="map4.jpg" alt="Map Image">
+            </div>
+            <div class="card">
+                <h2 class="center-text"><font-color="#D64A4A">VENUE</font-color></h2>
+                <img src="hotel 1.jpg" alt="Venue">
+            </div>
+            <div class="card">
+                <h2 class="center-text"><font-color="#D64A4A">DRIVING DIRECTIONS</font-color></h2>
+                <p><B>From KL Sentral (Central Hub):</B> Head southwest on Jalan Travers, continue onto Jalan Damansara, merge onto Jalan Sultan Ismail, turn left onto Jalan P. Ramlee, and the hotel will be on your right.</p>
+                <p><B>From KLIA/KLIA2 (Airport):</B> Take KLIA Express or a taxi to KL Sentral, then follow the above directions.</p>
+                <p><B>From Petronas Twin Towers (KLCC):</B> Go northeast on Jalan Ampang, turn right onto Jalan P. Ramlee, continue straight, and the hotel will be on your left.</p>
+            </div>
+            <div class="card">
+                <h2 class="center-text"><font-color="#D64A4A">ADDITIONAL INFORMATION</font-color></h2>
+                <p><B>Address:</B> The Majestic Hotel, 5 Jalan Sultan Hishamuddin, 50000 Kuala Lumpur, Malaysia.</p>
+                <p><B>Location Highlights:</B></p>
+                <p><B>Proximity to Landmarks:</B> Near historical sites like the Sultan Abdul Samad Building, Merdeka Square, and the National Mosque.</p>
+                <p><B>Transport Links:</B> Close to the Kuala Lumpur Railway Station, making it easily accessible via public transportation. Major highways and roads provide easy access for guests driving to the event.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer">
+                <center><a href="aurorabaru1.html" class="button prev";>PREVIOUS</center></div></a>
+                <center><a href="aurorabaru3.html" class="button next";>NEXT</center></div></a>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

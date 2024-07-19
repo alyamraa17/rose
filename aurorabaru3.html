@@ -1,0 +1,168 @@
+<html>
+    <head>
+    <title>PRICING</title>
+    <style>
+        body{
+            background-image: url(rose23.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header{
+            width: 100%;
+            background-color: #9C2106;
+            padding: 30px;
+            text-align: center;
+            color: #fff;
+            font-family: Stencil;
+        }
+        header h1{
+            margin: 0;
+        }
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+        .pricing-table{
+            width: 100%;
+            border-collapse: separate;
+            box-shadow: 80PX;
+            margin-bottom: 40px;
+        }
+        .pricing-table th, .pricing-table td{
+            padding: 15px;
+            text-align: center;
+        }
+        .pricing-table th{
+            background-color: black;
+            color: #fff;
+        }
+        .pricing-table tbody tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        .pricing-table tbody{
+            background-color: #ffffff;
+        }
+        .discount{
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .images-section, .free-gift-section{
+            text-align: center;
+            font-size: 15px;
+        }
+        .images-section h2, .free-gift-section h2{
+            margin-bottom: 20px;
+        }
+        .images-section img, .free-gift-section img{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s,
+        }
+        .images-section img:hover, .free-gift-section img:hover{
+            transform: 1.1s;
+            box-shadow: 80px;
+        }
+        .free-gift-section p{
+            font-size: 20px;
+            color: #000000;
+        }
+        @media (max-width: 768px){
+            .images-section img, .free-gift-section img{
+                width: 270px;
+                height: 270px;
+            }
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 25px;
+            border: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+            background-color: #d88cb5;
+            }
+        .button img {
+            margin-right: 10px;
+        }
+        .next {
+            background-color: #d88cb5;
+        }
+        .prev {
+            background-color: #d88cb5;
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+    <h1>AURORA GLOW PRICING</h1>
+    </header>
+    <div class="center-text">
+        <button class="button" id="playButton" onclick="playAudio()">Play Music</button>
+        <background-color:"#0f0f0f"></background>
+    </div>
+    <audio id="bg-music">
+        <source src="music2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('bg-music');
+            audio.play().then(() => {
+                document.getElementById('playButton').style.display = 'none';
+            }).catch(error => {
+                console.error('Audio playback failed:', error);
+            });
+        }
+    </script>
+    <div class="container">
+    <table class="pricing-table">
+        <thead>
+            <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>ORIGINAL PRICE</th>
+            <th>DISCOUNTED PRICE (10% off)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Lipmatte Rose Package</td>
+            <td>4 Pieces</td>
+            <td>RM50.00</td>
+            <td class="discount">RM45.00</td>
+            </tr>
+        </tbody>
+    </table>
+        <div class="images-section">
+        <h2>PRODUCT IMAGES</h2>
+        <img src="rose26.jpg" alt="Product 1">
+        <img src="rose27.jpg" alt="Product 2">
+        <img src="rose28.jpg" alt="Product 3">
+        <img src="rose31.jpg" alt="Product 4">
+        </div>
+        <div class="free-gift-section">
+        <h2>FREE GIFT</h2>
+        <img src="rose30.jpg" alt="Free Gift">
+        <p>Get this free gift with your purchase!</p>
+        <div class="footer">
+            <div class="button-container">
+                <a href="aurorabaru2.html" class="button prev">PREVIOUS</a>
+                <a href="aurorabaru4.html" class="button next">NEXT</a>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
